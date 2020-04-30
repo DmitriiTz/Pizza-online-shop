@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Order;
+namespace App\Entities\Order;
 
 use App\Entities\Core\User;
 use Illuminate\Database\Eloquent\Model;
@@ -25,12 +25,10 @@ class Order extends Model
      */
     protected $with = [
         'order_pizzas',
-        'user',
+        'user'
     ];
 
     /**
-     *
-     *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function order_pizzas()
@@ -39,8 +37,6 @@ class Order extends Model
     }
 
     /**
-     *
-     *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function user()
