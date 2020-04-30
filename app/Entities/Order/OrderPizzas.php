@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Order;
+namespace App\Entities\Order;
 
+use App\Entities\Pizza\Pizza;
 use Illuminate\Database\Eloquent\Model;
 
 
@@ -24,13 +25,10 @@ class OrderPizzas extends Model
      * @var array
      */
     protected $with = [
-        'order_pizzas',
-        'order'
+        'pizza'
     ];
 
     /**
-     *
-     *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function pizza(){
@@ -38,8 +36,6 @@ class OrderPizzas extends Model
     }
 
     /**
-     *
-     *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function order(){
