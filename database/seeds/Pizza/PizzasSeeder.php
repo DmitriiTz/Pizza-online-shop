@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Entities\Pizza\Pizza;
 
 class PizzasSeeder extends Seeder
 {
@@ -11,6 +12,6 @@ class PizzasSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Pizza\Pizza::class, 8)->create();
+        factory(Pizza::class, 8)->create();
     }
 }

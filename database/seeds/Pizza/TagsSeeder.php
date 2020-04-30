@@ -1,6 +1,6 @@
 <?php
 
-use App\Pizza\Tag;
+use App\Entities\Pizza\Tag;
 use Illuminate\Database\Seeder;
 
 class TagsSeeder extends Seeder

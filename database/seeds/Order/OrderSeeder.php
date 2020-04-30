@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Entities\Order\Order;
 
 class OrderSeeder extends Seeder
 {
@@ -12,6 +13,6 @@ class OrderSeeder extends Seeder
     public function run()
     {
 
-        factory(App\Order\Order::class, 20)->create();
+        factory(Order::class, 20)->create();
     }
 }

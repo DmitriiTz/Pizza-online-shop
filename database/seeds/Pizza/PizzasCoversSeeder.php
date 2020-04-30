@@ -1,7 +1,7 @@
 <?php
 
-use App\Pizza\Pizza;
-use App\Pizza\PizzasCover;
+use App\Entities\Pizza\Pizza;
+use App\Entities\Pizza\PizzasCover;
 use Illuminate\Database\Seeder;
 
 class PizzasCoversSeeder extends Seeder

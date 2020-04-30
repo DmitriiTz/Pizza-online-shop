@@ -1,6 +1,6 @@
 <?php
 
-use App\Order\OrderPizzas;
+use App\Entities\Order\OrderPizzas;
 use Illuminate\Database\Seeder;
 
 class OrderPizzasSeeder extends Seeder
